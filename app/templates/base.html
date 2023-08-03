@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{titulo}}</title>
+    <style>
+        /* Estilos opcionais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 5px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #666;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">inicio</a></li>
+            <li><a href="/sobre">Sobre</a></li>
+            <li><a href="/contatos">Contato</a></li>
+        </ul>
+    </nav>
+
+    {% block conteudo %}
+
+    {% endblock %}
+
+        <footer>
+        <p>Manuela Alencar. Todos os direitos reservados &copy; 2023</p>
+    </footer>
+</body>
+
+</html>
