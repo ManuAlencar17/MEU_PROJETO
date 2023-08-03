@@ -1,0 +1,67 @@
+/* Estilos opcionais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d67171;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    background-color: #261447;
+    color: #fff;
+    padding: 5px;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #49090c;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    background-color: limegreen; /* Adicionando a cor verde-limão no rodapé */
+}
+
+/* Estilos adicionais para a seção "Inicio" */
+section:nth-child(3) {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Estilos adicionais para os títulos das seções */
+h2 {
+    border-bottom: 2px solid #d67171;
+    padding-bottom: 5px;
+    color: #261447;
+}
+
+/* Estilos adicionais para os produtos em destaque */
+.produto h3 {
+    margin-top: 10px;
+    color: #261447;
+    font-size: 18px;
+}
+
+.produto p {
+    color: #666;
+}
+
+/* Estilos adicionais para o rodapé */
+footer {
+    background-color: #49090c;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    background-color: limegreen;
+}
+
+footer p {
+    margin: 5px 0;
+}

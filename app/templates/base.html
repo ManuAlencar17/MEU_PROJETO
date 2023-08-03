@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{titulo}}</title>
+    <title>Template HTML</title>
     <style>
         /* Estilos opcionais */
         body {
@@ -14,13 +14,13 @@
         }
 
         header {
-            background-color: #333;
+            background-color: #d67171;
             color: #fff;
             padding: 10px;
         }
 
         nav {
-            background-color: #444;
+            background-color: #261447;
             color: #fff;
             padding: 5px;
         }
@@ -30,34 +30,37 @@
         }
 
         footer {
-            background-color: #666;
+            background-color: #49090c;
             color: #fff;
             padding: 10px;
             text-align: center;
+            background-color: limegreen;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Meu Website</h1>
+        <h1>Manuela Alencar</h1>
     </header>
 
     <nav>
         <ul>
-            <li><a href="/">inicio</a></li>
-            <li><a href="/sobre">Sobre</a></li>
-            <li><a href="/contatos">Contato</a></li>
+            <li><a href="#">Página 1</a></li>
+            <li><a href="#">Página 2</a></li>
+            <li><a href="#">Página 3</a></li>
         </ul>
     </nav>
 
-    {% block conteudo %}
+    {% block conteudo %}{% endblock %}
 
-    {% endblock %}
-
-        <footer>
-        <p>Manuela Alencar. Todos os direitos reservados &copy; 2023</p>
+    <footer>
+        <p>mcrisalencar@hotmail.com:</p>
+        <p>Nome: Manuela Alencar</p>
+        <p>Telefone: 84 9.9688-4787</p>
+        <p>Todos os direitos reservados &copy; 2023</p>
     </footer>
 </body>
 
 </html>
+
