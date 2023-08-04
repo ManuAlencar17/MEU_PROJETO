@@ -1,31 +1,31 @@
 {% extends 'base.html' %}
 
-{% block conteudo %}
-<section style="background-color: #f9f9f9; color: #333;">
-    <h2 style="border-bottom: 2px solid #d67171; padding-bottom: 5px;">Inicio</h2>
-    <p>Seja bem-vindo à nossa página inicial. Aqui você encontrará informações relevantes sobre o mundo da programação de sistemas.</p>
-    <p>Um programador de sistemas é um profissional altamente qualificado e especializado em desenvolver, testar e manter softwares que permitem o funcionamento de sistemas computacionais.</p>
-    <p>Nosso time de desenvolvedores é apaixonado por tecnologia e está constantemente buscando novas soluções e inovações para criar sistemas eficientes e seguros.</p>
-    <p>Estamos prontos para atender às suas necessidades e entregar soluções personalizadas para o seu negócio.</p>
-</section>
+{% block title %}Manuela Alencar - Blog{% endblock %}
 
-<section>
-    <h2>Produtos em Destaque</h2>
-    <div class="produtos">
-        <div class="produto">
-            <h3>Sistema de Gerenciamento de Projetos</h3>
-            <p>Descrição do Sistema de Gerenciamento de Projetos. Uma ferramenta completa para acompanhar e controlar todas as etapas dos seus projetos.</p>
-        </div>
-        <div class="produto">
-            <h3>Sistema de Controle de Estoque</h3>
-            <p>Descrição do Sistema de Controle de Estoque. Otimize seu gerenciamento de estoque, mantendo registros precisos e facilitando a reposição de produtos.</p>
-        </div>
-        <div class="produto">
-            <h3>Sistema de Gestão Financeira</h3>
-            <p>Descrição do Sistema de Gestão Financeira. Controle suas finanças de forma eficiente, monitorando receitas e despesas para tomar decisões mais inteligentes.</p>
-        </div>
-    </div>
-</section>
+{% block content %}
+    <section>
+        <article class="blog-article">
+            <h3>Como iniciar na programação</h3>
+            <p>
+                A programação é uma habilidade poderosa e cada vez mais valorizada no mercado de trabalho. Neste artigo, vamos dar algumas dicas e recursos para você começar seus estudos em programação.
+            </p>
+            <a href="/artigo/como-iniciar-programacao/">Leia mais...</a>
+        </article>
+
+        <article class="blog-article">
+            <h3>As linguagens de programação mais populares em 2023</h3>
+            <p>
+                Descubra quais são as linguagens de programação mais populares neste ano e por que elas são tão demandadas pelas empresas e desenvolvedores.
+            </p>
+            <a href="/artigo/linguagens-populares-2023/">Leia mais...</a>
+        </article>
+
+        <article class="blog-article">
+            <h3>Como se destacar como programador</h3>
+            <p>
+                Ser um programador competente é importante, mas também é essencial se destacar entre os demais profissionais da área. Conheça algumas estratégias para se destacar e alcançar sucesso na carreira de programador.
+            </p>
+            <a href="/artigo/como-se-destacar-como-programador/">Leia mais...</a>
+        </article>
+    </section>
 {% endblock %}
-
-

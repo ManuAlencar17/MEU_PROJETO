@@ -4,39 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template HTML</title>
-    <style>
-        /* Estilos opcionais */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #d67171;
-            color: #fff;
-            padding: 10px;
-        }
-
-        nav {
-            background-color: #261447;
-            color: #fff;
-            padding: 5px;
-        }
-
-        section {
-            padding: 20px;
-        }
-
-        footer {
-            background-color: #49090c;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            background-color: limegreen;
-        }
-    </style>
+    <title>{% block title %}Manuela Alencar - Blog{% endblock %}</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/estilo.css')}}">
 </head>
 
 <body>
@@ -46,21 +15,22 @@
 
     <nav>
         <ul>
-            <li><a href="#">Página 1</a></li>
-            <li><a href="#">Página 2</a></li>
-            <li><a href="#">Página 3</a></li>
+            <li><a href="/">Página inicial</a></li>
+            <li><a href="/contatos">Contatos</a></li>
+            <li><a href="/sobre">Sobre</a></li>
+            <li><a href="/projetos">Projetos</a></li>
         </ul>
     </nav>
 
-    {% block conteudo %}{% endblock %}
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
 
     <footer>
-        <p>mcrisalencar@hotmail.com:</p>
+        <p>Email: mcrisalencar@hotmail.com</p>
         <p>Nome: Manuela Alencar</p>
-        <p>Telefone: 84 9.9688-4787</p>
         <p>Todos os direitos reservados &copy; 2023</p>
     </footer>
 </body>
 
 </html>
-

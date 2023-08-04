@@ -14,3 +14,7 @@ def Contatos():
 def Sobre() :
      return render_template('sobre.html' , titulo = 'sobre')
      
+
+@app.route('/projetos')
+def Projetos() :
+     return render_template('projetos.html' , titulo = 'Projetos')
